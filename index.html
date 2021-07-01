@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Calculator</title>
+</head>
+<body class="px-20 py-60 bg-gradient-to-r from-blue-400 to-green-400 sm:px-36 sm:py-72 md:px-44 lg:px-72 xl:px-96 2xl:px-96">
+
+        <div class="grid grid-cols-4 grid-row-4">
+
+            <div class="bg-gray-800 opacity-60 py-6 text-white col-span-4 flex items-end flex-col justify-around pr-3">
+                <div data-previous-operand class="text-sm opacity-40"></div>
+                <div data-current-operand  class="text-lg"></div>
+            </div>
+            
+            <button data-all-clear class="btn col-span-2">AC</button>
+            <button data-delete class="btn">DEL</button>
+            <button data-operation class="btn">/</button>
+            <button data-number class="btn">1</button>
+            <button data-number class="btn">2</button>
+            <button data-number class="btn">3</button>
+            <button data-operation class="btn">*</button>
+            <button data-number class="btn">4</button>
+            <button data-number class="btn">5</button>
+            <button data-number class="btn">6</button>
+            <button data-operation class="btn">+</button>
+            <button data-number class="btn">7</button>
+            <button data-number class="btn">8</button>
+            <button data-number class="btn">9</button>
+            <button data-operation class="btn">-</button>
+            <button data-number class="btn">.</button>
+            <button data-number class="btn">0</button>
+            <button data-equal class=" col-span-2 btn">=</button>
+
+        </div>
+        <script src="./main.js"></script>
+</body>
+</html>
