@@ -9,15 +9,15 @@
    
     <title>Calculator</title>
 </head>
-<body class="px-20 py-60 bg-gradient-to-r from-blue-400 to-green-400 sm:px-36 sm:py-72 md:px-44 lg:px-72 xl:px-96 2xl:px-96">
+<body class="bg-gradient-to-r from-blue-400 to-green-400 container pt-72 sm:px-12 lg:px-28 xl:px-56 2xl:px-80">
 
-        <div class="grid grid-cols-4 grid-row-4">
-
-            <div class="bg-gray-800 opacity-60 py-6 text-white col-span-4 flex items-end flex-col justify-around pr-3">
+            <div class="bg-gray-800 opacity-60 h-24 text-white col-span-4 flex items-end flex-col justify-around break-words break-all pr-3">
                 <div data-previous-operand class="text-sm opacity-40"></div>
                 <div data-current-operand  class="text-lg"></div>
             </div>
-            
+        
+            <div class="grid grid-cols-4 grid-row-4">
+
             <button data-all-clear class="btn col-span-2">AC</button>
             <button data-delete class="btn">DEL</button>
             <button data-operation class="btn">/</button>
@@ -36,8 +36,9 @@
             <button data-number class="btn">.</button>
             <button data-number class="btn">0</button>
             <button data-equal class=" col-span-2 btn">=</button>
+       
+            </div>
 
-        </div>
         <script src="./main.js"></script>
 </body>
 </html>
